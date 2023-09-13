@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="particles-js">
+        <div class="container">
+            <div class="header">
+                <img src="img/logo.png" alt="Favicon" class="favicon">
+                <h1>Password Generator</h1>
+            </div>
+            <div class="settings">
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" min="8" max="128" value="12">
+                <br>
+                <label for="uppercase">Include Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" checked>
+                <br>
+                <label for="lowercase">Include Lowercase Letters</label>
+                <input type="checkbox" id="lowercase" checked>
+                <br>
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+                <br>
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" id="symbols" checked>
+                <br>
+                <button id="generate">Generate Password</button>
+                <button id="copy">Copy to Clipboard</button>
+                <button id="save-password">Save Password</button>
+            </div>
+            <div class="output">
+                <textarea id="password" readonly placeholder="Copy Password"></textarea>
+            </div>
+            
+            <!-- Separate lists for saved and generated passwords with popups -->
+            <div class="saved-passwords-popup" id="saved-passwords-popup">
+                <h3>Saved Passwords</h3>
+                <ul id="saved-password-list-popup"></ul>
+                <button id="close-saved-popup">Close</button>
+            </div>
+            
+            <div class="generated-passwords-popup" id="generated-passwords-popup">
+                <h3>Generated Passwords</h3>
+                <ul id="generated-password-list-popup"></ul>
+                <button id="close-generated-popup">Close</button>
+            </div>
+
+            <!-- Button to open the "Saved Passwords" popup -->
+            <button id="open-saved-popup">Open Saved Passwords</button>
+
+            <!-- Button to open the "Generated Passwords" popup -->
+            <button id="open-generated-popup">Open Generated Passwords</button>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+    <script src=
+        "particles.js-master/particles.js">
+    </script>
+    <script src=
+        "/particles.js-master/demo/js/app.js">
+    </script>
+</body>
+</html>
