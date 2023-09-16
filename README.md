@@ -1,4 +1,8 @@
 # passwordgenerator
+![logo_transparent](https://github.com/JarelEze1/passwordgenerator/assets/112780966/9ebee654-e18a-425f-b8ff-33dfd1ffc514)
+
+
+
 Project Description:
 Title: Password Generator Web App
 Description:
